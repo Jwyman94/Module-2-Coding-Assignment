@@ -1,97 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Layout</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-        }
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
 
-        header h1 {
-            text-align: center;
-            font-size: 200%;
-        }
+header h1 {
+    text-align: center;
+    font-size: 200%;
+}
 
-        main {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
-        .box {
-            position: relative;
-            border: 1px solid black;
-            background-color: purple;
-            padding: 20px;
-            margin-bottom: 20px;
-        }
+.box {
+    position: relative;
+    border: 1px solid black;
+    background-color: purple;
+    padding: 20px;
+    margin-bottom: 20px;
+}
 
-        .title {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background-color: gold;
-            padding: 5px;
-            border: 1px solid black;
-        }
+.title {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: gold;
+    padding: 5px;
+    border: 1px solid black;
+}
 
-        .box p {
-            margin-top: 50px; /* To prevent text overlap with the title */
-        }
+.box p {
+    margin-top: 50px; /* To prevent text overlap with the title */
+}
 
-        /* Desktop view: 992px and above */
-        @media (min-width: 992px) {
-            .box {
-                width: 32%; /* 3 boxes in one row */
-            }
-        }
+/* Desktop view: 992px and above */
+@media (min-width: 992px) {
+    .box {
+        width: 32%; /* 3 boxes in one row */
+    }
+}
 
-        /* Tablet view: 768px to 991px */
-        @media (min-width: 768px) and (max-width: 991px) {
-            .box {
-                width: 48%;
-            }
+/* Tablet view: 768px to 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+    .box {
+        width: 48%;
+    }
 
-            #cheesecake {
-                width: 100%; /* The 3rd box takes the whole row */
-            }
-        }
+    #cheesecake {
+        width: 100%; /* The 3rd box takes the whole row */
+    }
+}
 
-        /* Mobile view: 767px and below */
-        @media (max-width: 767px) {
-            .box {
-                width: 100%; /* Each section takes full width */
-            }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Our Menu</h1>
-    </header>
-    <main>
-        <section class="box" id="chicken">
-            <div class="title">Chicken</div>
-            <p>Indulge in our succulent Chicken Delight, where tender chicken breast is marinated in a blend of aromatic herbs and spices, then perfectly grilled to juicy perfection. Served atop a bed of fragrant jasmine rice, this dish is accompanied by seasonal vegetables sautéed in a light garlic butter sauce, adding a vibrant touch to every bite. Finished with a drizzle of our zesty lemon-herb sauce, this flavorful creation promises to tantalize your taste buds and leave you craving more. Whether enjoyed as a family dinner or a solo treat, our Chicken Delight is a comforting and satisfying choice for any occasion..</p>
-        </section>
-        <section class="box" id="steak">
-            <div class="title">Steak</div>
-            <p>Savor the bold, rich flavor of our premium steak, expertly grilled to perfection. This juicy, hand-cut steak is seasoned with a blend of aromatic herbs and spices, then seared to lock in its natural juices. Served with your choice of two sides, this steak promises a melt-in-your-mouth experience with every bite, pairing perfectly with a glass of red wine or our house-made sauces. Whether you prefer it tender and rare or cooked to well-done, this steak is crafted to satisfy your cravings for a hearty, flavorful meal.</p>
-        </section>
-        <section class="box" id="cheesecake">
-            <div class="title">Cheesecake</div>
-            <p>Indulge in the creamy decadence of our signature cheesecake, a true classic that melts in your mouth with every bite. Made with the finest cream cheese and a hint of vanilla, this rich and velvety dessert is set atop a buttery graham cracker crust for the perfect balance of textures. Each slice is generously topped with your choice of fresh berries, a drizzle of chocolate, or a swirl of caramel. Whether you're a cheesecake purist or prefer a flavorful twist, this dessert is the ultimate treat to end your meal on a sweet, satisfying note.</p>
-        </section>
-    </main>
-</body>
-</html>
-
+/* Mobile view: 767px and below */
+@media (max-width: 767px) {
+    .box {
+        width: 100%; /* Each section takes full width */
+    }
+}
